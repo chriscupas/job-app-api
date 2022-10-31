@@ -1,16 +1,15 @@
 {
 	"version": 2,
-	"name": "job-app-api",
 	"builds": [
 		{
 			"src": "./index.js",
-			"use": "@now/node"
+			"use": "@vercel/node"
 		}
 	],
 	"routes": [
 		{
 			"src": "/(.*)",
-			"dest": "./index.js"
+			"dest": "/"
 		}
 	]
 }
