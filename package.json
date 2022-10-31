@@ -3,8 +3,11 @@
 	"version": "1.0.0",
 	"description": "jobs api",
 	"main": "app.js",
+	"engines": {
+		"node": "16.15"
+	},
 	"scripts": {
-		"start": "SET NODE_ENV=production& node app.js",
+		"start": "SET NODE_ENV=production& node index.js",
 		"dev": "nodemon app"
 	},
 	"author": "chriscupas",
