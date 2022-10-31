@@ -7,7 +7,7 @@
 		"node": "16.15"
 	},
 	"scripts": {
-		"start": "set NODE_ENV=production& node index.js",
+		"start": "node index.js",
 		"dev": "nodemon app"
 	},
 	"author": "chriscupas",
