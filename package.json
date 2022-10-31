@@ -2,7 +2,7 @@
 	"name": "job-app-api",
 	"version": "1.0.0",
 	"description": "jobs api",
-	"main": "app.js",
+	"main": "index.js",
 	"engines": {
 		"node": "16.x"
 	},

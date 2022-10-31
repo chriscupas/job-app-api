@@ -8,8 +8,6 @@ Visit [https://job-app-api.vercel.app/](https://job-app-api.vercel.app/)
 
 ## Starting Locally
 
----
-
 <p>You need to install atleast version 16.15 on your local machine.</p>
 
 > Install Dependencies
@@ -25,8 +23,6 @@ npm start
 ```
 
 ## Starting via Docker
-
----
 
 <p>Pull the image</p>
 
@@ -49,8 +45,6 @@ dotenv -- bash -c 'docker run -d --env-file ./config/config.env -p 3000:3000 chr
 ```
 
 ## Building locally
-
----
 
 <p>Build the Dockerfile</p>
 
