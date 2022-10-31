@@ -1,8 +1,8 @@
 {
-	"name": "jobbee-api",
+	"name": "job-app-api",
 	"version": "1.0.0",
 	"description": "jobs api",
-	"main": "index.js",
+	"main": "app.js",
 	"engines": {
 		"node": "16.x"
 	},

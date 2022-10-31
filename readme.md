@@ -84,9 +84,9 @@ Replace all environment variable values with yours.
 | COOKIE_EXPIRES_TIME |  Cookie exp time  |                              _e.g. 7_                               |
 | SMTP_HOST           |     SMTP HOST     |                                                                     |
 | SMTP_PORT           |     SMTP PORT     |                                                                     |
-| SMTP_EMAIL          |    SMTP EMAIL     |                                                                     |
+| SMTP_EMAIL          |     SMTP USER     |                                                                     |
 | SMTP_PASSWORD       |   SMTP PASSWORD   |                                                                     |
 | SMTP_FROM_EMAIL     |  SMTP FROM EMAIL  |                                                                     |
-| SMTP_FROM_NAME      |  SMTP FROM NAME   |                            right-aligned                            |
+| SMTP_FROM_NAME      |  SMTP FROM NAME   |                                                                     |
 | MAX_FILE_SIZE       |     FILE SIZE     |                           _e.g. 2000000_                            |
 | UPLOAD_PATH         |    UPLOAD PATH    |                       _e.g. ./public/uploads_                       |

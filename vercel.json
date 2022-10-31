@@ -3,9 +3,14 @@
 	"name": "job-app-api",
 	"builds": [
 		{
-			"src": "./index.js",
+			"src": "./app.js",
 			"use": "@vercel/node"
 		}
 	],
-	"rewrites": [{ "source": "/api/(.*)", "destination": "/api" }]
+	"routes": [
+		{
+			"src": "/(.*)",
+			"dest": "/"
+		}
+	]
 }
