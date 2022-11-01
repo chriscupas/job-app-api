@@ -13,9 +13,9 @@ const bodyParser = require("body-parser");
 
 // Handling uncaught exception
 process.on("uncaughtException", (err) => {
-  console.log(`Error: ${err.message}`);
-  console.log("Shutting down due to uncaught exception");
-  process.exit(1);
+	console.log(`Error: ${err.message}`);
+	console.log("Shutting down due to uncaught exception");
+	process.exit(1);
 });
 
 const connectDatabase = require("./config/database");
@@ -53,15 +53,15 @@ app.use(xssClean());
 
 // Prevent Parameter Pollution
 app.use(
-  hpp({
-    whitelist: ["positions"],
-  })
+	hpp({
+		whitelist: ["positions"],
+	})
 );
 
 // Rate Limiting
 const limiter = rateLimit({
-  windowMs: 10 * 60 * 1000, // 10 minutes
-  max: 100,
+	windowMs: 10 * 60 * 1000, // 10 minutes
+	max: 100,
 });
 
 // Setup CORS - Accesible by others domains
@@ -80,7 +80,7 @@ app.use(process.env.API_ROUTE_V1, user);
 
 // Handle unhandled routes
 app.all("*", (req, res, next) => {
-  next(new ErrorHandler(`${req.originalUrl} route not found`, 404));
+	next(new ErrorHandler(`${req.originalUrl} route not found`, 404));
 });
 
 // Middleware to handle errors
@@ -89,16 +89,16 @@ app.use(errorMiddleware);
 const PORT = process.env.PORT || 3000;
 
 const server = app.listen(PORT, () => {
-  console.log(
-    `Server started on port ${process.env.PORT} in ${process.env.NODE_ENV} mode`
-  );
+	console.log(
+		`Server started on port ${process.env.PORT} in ${process.env.NODE_ENV} mode`
+	);
 });
 
 // Handle unhandled promise rejection
 process.on("unhandledRejection", (err) => {
-  console.log(`Error ${err.message}`);
-  console.log("Shutting down the server due to unhandled promise rejection.");
-  server.close(() => {
-    process.exit(1);
-  });
+	console.log(`Error ${err.message}`);
+	console.log("Shutting down the server due to unhandled promise rejection.");
+	server.close(() => {
+		process.exit(1);
+	});
 });
