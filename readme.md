@@ -4,7 +4,7 @@ Backend RESTful API for jobs built in Node.js using Express.js & MongoDB
 
 ## For Demo
 
-Visit [https://job-app-api.vercel.app/](https://job-app-api.vercel.app/)
+Visit [https://jobbee-cups-api.herokuapp.com/](https://jobbee-cups-api.herokuapp.com/)
 
 ## Starting Locally
 
