@@ -55,7 +55,7 @@ docker build  -t job_app_api:0.0.1 .
 <p>Run docker</p>
 
 ```bash
-docker run -d --env-file ./config/config.env -p 3000:3000 chriscupas/job-app
+docker run -d --env-file ./config/config.env -p 3000:3000 job_app_api:0.0.1
 ```
 
 ## Config.env
