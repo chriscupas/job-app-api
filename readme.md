@@ -46,6 +46,8 @@ dotenv -- bash -c 'docker run -d --env-file ./config/config.env -p 3000:3000 chr
 
 ## Building locally
 
+<p>Pull the source code then :</p>
+
 <p>Build the Dockerfile</p>
 
 ```bash
